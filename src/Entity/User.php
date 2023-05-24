@@ -65,7 +65,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $cod_postal;
+    private $code_postal;
 
     public function getId(): ?int
     {
@@ -216,14 +216,14 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getCodPostal(): ?string
+    public function getCodePostal(): ?string
     {
-        return $this->cod_postal;
+        return $this->code_postal;
     }
 
-    public function setCodPostal(string $cod_postal): self
+    public function setCodePostal(string $code_postal): self
     {
-        $this->cod_postal = $cod_postal;
+        $this->code_postal = $code_postal;
 
         return $this;
     }
